@@ -1,6 +1,11 @@
 package adamSmithComp373Proj1;
 
 import adamSmithComp373Proj1.Domain.*;
+import adamSmithComp373Proj1.DAL.*;
+
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public final class App {
     private App() {
@@ -11,7 +16,30 @@ public final class App {
      * @param args The arguments of the program.
      */
     public static void main(String[] args) {
-       Facility facility = new Facility(1);
+       
+        ApplicationContext context = new ClassPathXmlApplicationContext("app-context.xml");
+        System.out.println("***************** Application Context instantiated! ******************");
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+        //Facility facility = new Facility(1);
        //Facility facility2 = new Facility(2);
         //System.out.println(facility.getFacilityInformation());
         //System.out.println(facility.getName());
@@ -19,7 +47,7 @@ public final class App {
         //System.out.println(facility.getLocation());
         //System.out.println("Hello World!");
         //System.out.println(facility.getOccupiedRooms());
-        System.out.println(facility.listFacilities());
+        //System.out.println(facility.listFacilities());
         //facility.addNewFacility("Interface Insert Test", "6533 N Newgard Avenue, Chicago, IL 60626", "9062039222", 15);\
         //System.out.println(facility.getNumberOfRooms());
         //System.out.println(facility.requestAvailableCapacity());

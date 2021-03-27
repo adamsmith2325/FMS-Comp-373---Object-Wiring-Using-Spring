@@ -8,7 +8,7 @@
     
     <description> Wiring in dependencies for the container to use. </description>
 
-    <context: component-scan base-package="adamSmithComp373Proj1" />
+    <context:component-scan base-package="adamSmithComp373Proj1" />
 
     <bean id="Facility" class ="adamSmithComp373Proj1.Domain.Facility" scope="prototype" />
     <bean id="FacilityMaintainence" class ="adamSmithComp373Proj1.Domain.FacilityMaintainence" scope="prototype" />
