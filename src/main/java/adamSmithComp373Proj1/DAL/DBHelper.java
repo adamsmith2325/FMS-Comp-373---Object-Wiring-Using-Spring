@@ -1,6 +1,15 @@
 package adamSmithComp373Proj1.DAL;
 import java.sql.*;
 
+
+/*
+
+Database Username: epiz_28236332!
+Database Password: Comp373MySQL
+
+
+*/
+
 public class DBHelper {
     
     public static Connection formConnection(){  
