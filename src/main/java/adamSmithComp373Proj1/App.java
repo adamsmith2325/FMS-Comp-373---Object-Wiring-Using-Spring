@@ -19,6 +19,7 @@ public final class App {
        
         ApplicationContext context = new ClassPathXmlApplicationContext("app-context.xml");
         System.out.println("***************** Application Context instantiated! ******************");
+        Facility Facility1 = (Facility) context.getBean("Facility");
        
        
        
