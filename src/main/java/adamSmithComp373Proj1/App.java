@@ -22,10 +22,11 @@ public final class App {
        
         ApplicationContext context = new ClassPathXmlApplicationContext("app-context.xml");
         System.out.println("***************** Application Context instantiated! ******************");
-        //FacilityImpl Building1 = (FacilityImpl) context.getBean("Facility");
-        //Building1.setName("Adam's Test Building");
-        //Building1.setPhone("8888888888");
-
+        FacilityImpl Building1 = (FacilityImpl) context.getBean("Facility");
+        Building1.FacilityID = 3;
+        
+        Building1.setPhone("8888888888");
+        
         //FacilityUse yogaClass = (FacilityUse) context.getBean("FacilityUse");
 
        

@@ -10,17 +10,20 @@ public class FacilityImpl implements Facility {
 
     //Required Class Attributes
     private FacilityDAO Connection  = new FacilityDAO();
-    private Integer FacilityID;
-    private String Name = Connection.getName(this.FacilityID);
+    public Integer FacilityID;
+    private String Name = null;
     private String Location = Connection.getLocation(this.FacilityID);
     private String phoneNumber = Connection.getPhone(this.FacilityID);
     private Integer numOfRooms = Connection.getNumberOfRooms(this.FacilityID);
     public Integer OccupiedRooms = Connection.getOccupiedRooms(this.FacilityID);
 
 
-    
+    public FacilityImpl(){
+        this.FacilityID = null;
+    }
+
     public FacilityImpl(Integer ID){
-        //this.FacilityID = ID;
+        this.FacilityID = ID;
     }
 
     //Misc. Relevant Methods
@@ -119,6 +122,5 @@ public class FacilityImpl implements Facility {
         }
     }
 
-    
 }
 
