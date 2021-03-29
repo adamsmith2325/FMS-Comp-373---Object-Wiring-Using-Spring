@@ -15,7 +15,7 @@ developed in Project 1.
 – Dependency relationship using XML
 
 Supporting documents:
-- Class examples for Dependency Injection.
+– Class examples for Dependency Injection.
 – Object Wiring Using Spring (http://docs.spring.io/spring/docs/2.5.6/reference/beans.html)
 
 Project Expectation:
