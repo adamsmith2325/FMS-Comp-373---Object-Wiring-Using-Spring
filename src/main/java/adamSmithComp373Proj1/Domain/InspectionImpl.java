@@ -4,7 +4,7 @@ import adamSmithComp373Proj1.Domain.Facility;
 
 public enum Type{TYPE, TYPE2, TYPE3}
 
-public class Inspection {
+public class InspectionImpl extends Inspection{
     
     private InspectionDAO Conn = new InspectionDAO();
     private Integer InspectionID;
