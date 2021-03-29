@@ -7,6 +7,9 @@ import org.springframework.beans.factory.BeanFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+
+
+
 public final class App {
     private App() {
     }
@@ -19,10 +22,12 @@ public final class App {
        
         ApplicationContext context = new ClassPathXmlApplicationContext("app-context.xml");
         System.out.println("***************** Application Context instantiated! ******************");
-        FacilityImpl Building1 = (FacilityImpl) context.getBean("FacilityImpl");
-        Building1.setName("Adam's Test Building");
-        Building1.setPhone("8888888888");
-        
+        //FacilityImpl Building1 = (FacilityImpl) context.getBean("Facility");
+        //Building1.setName("Adam's Test Building");
+        //Building1.setPhone("8888888888");
+
+        //FacilityUse yogaClass = (FacilityUse) context.getBean("FacilityUse");
+
        
        
        

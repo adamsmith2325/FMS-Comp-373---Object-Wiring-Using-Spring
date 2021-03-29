@@ -3,8 +3,11 @@ import adamSmithComp373Proj1.DAL.FacilityDAO;
 
 import java.util.ArrayList;
 
+
 public class FacilityImpl implements Facility {
     
+    
+
     //Required Class Attributes
     private FacilityDAO Connection  = new FacilityDAO();
     private Integer FacilityID;
@@ -15,8 +18,9 @@ public class FacilityImpl implements Facility {
     public Integer OccupiedRooms = Connection.getOccupiedRooms(this.FacilityID);
 
 
+    
     public FacilityImpl(Integer ID){
-        this.FacilityID = ID;
+        //this.FacilityID = ID;
     }
 
     //Misc. Relevant Methods
@@ -115,6 +119,6 @@ public class FacilityImpl implements Facility {
         }
     }
 
-
+    
 }
 

@@ -10,7 +10,7 @@
 
     <context:component-scan base-package="adamSmithComp373Proj1" />
 
-    <bean id="Facility" class ="adamSmithComp373Proj1.Domain.FacilityImpl" scope="prototype">
+    <bean id="Facility" class ="adamSmithComp373Proj1.Domain.FacilityImpl">
         <property name="FacilityID" ref="FacilityID" />
         <property name="Name" ref="Name" />
         <property name="Location" ref="Location" />
