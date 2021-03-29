@@ -15,11 +15,16 @@ public class DBHelper {
     public static Connection formConnection(){  
         Connection con = null;
         try{
-            con = DriverManager.getConnection("jdbc:mysql://sql3.freemysqlhosting.net:3306/sql3395846", "sql3395846", "IV4NBJnb8F");
+            con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/facilitymanagementsystem", "root", "root");
         } catch(Exception e){
             System.out.println(e.toString());
         }
         return con;
     }
+
+    public static void main(String[] args) {
+        formConnection();
+    }
+
 }
 

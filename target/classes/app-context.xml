@@ -8,16 +8,9 @@
     
     <description> Wiring in dependencies for the container to use. </description>
 
-    <context:component-scan base-package="adamSmithComp373Proj1" />
+    <!-- <context:component-scan base-package="adamSmithComp373Proj1" /> -->
 
-    <bean id="Facility" class ="adamSmithComp373Proj1.Domain.FacilityImpl">
-        <property name="FacilityID" ref="FacilityID" />
-        <property name="Name" ref="Name" />
-        <property name="Location" ref="Location" />
-        <property name="phoneNumber" ref="phoneNumber" />
-        <property name="numOfRooms" ref="numOfRooms" />
-        <property name="OccupiedRooms" ref="OccupiedRooms" />
-    </bean>
+    <bean id="Facility" class ="adamSmithComp373Proj1.Domain.FacilityImpl" />
     <bean id="FacilityMaintainence" class ="adamSmithComp373Proj1.Domain.FacilityMaintainence" scope="prototype" />
     <bean id="FacilityUse" class ="adamSmithComp373Proj1.Domain.FacilityUse" scope="prototype" />
     <bean id="Inspection" class ="adamSmithComp373Proj1.Domain.Inspection" scope="prototype" />
