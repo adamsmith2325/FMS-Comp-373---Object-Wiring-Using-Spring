@@ -56,7 +56,7 @@ public class InspectionImpl extends Inspection{
     }
 
     public void setType(String InsType) {
-        Conn.setType(this.InspectionID);
+        Conn.setType(this.InspectionID, InsType);
     }
     public void setDetails(String insDetails) {
         Conn.setDetails();

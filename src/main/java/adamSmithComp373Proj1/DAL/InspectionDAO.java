@@ -29,7 +29,7 @@ public class InspectionDAO {
 
     }
 
-    public void setType(){
+    public void setType(Integer InsID, String Type){
         
     }
 

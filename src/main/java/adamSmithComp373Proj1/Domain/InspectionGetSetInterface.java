@@ -9,29 +9,19 @@ public interface InspectionGetSetInterface {
 
 
 
-public String getName(){
-}
-public Type getType(){
-}
-public String getDetails(){
-}
-public Integer getFacility(){
-}
-public Integer getRoom(){
-}
+public String getName();
+public Type getType();
+public String getDetails();
+public Integer getFacility();
+public Integer getRoom();
 
 //Set functionalities
 
-public void setName(){
-}
-public void setType(){      
-}
-public void setDetails(){    
-}
-public void setFacility(){    
-}
-public void setRoom(){  
-}
+public void setName(Integer ID, String Name);
+public void setType(Integer ID, String Type);
+public void setDetails(Integer ID, String Details);
+public void setFacility(Integer ID, Integer FacilityID);
+public void setRoom(Integer ID, Integer NumOfRooms);
 
 
 }
