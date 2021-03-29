@@ -10,7 +10,7 @@
 
     <context:component-scan base-package="adamSmithComp373Proj1" />
 
-    <bean id="Facility" class ="adamSmithComp373Proj1.Domain.Facility" scope="prototype">
+    <bean id="Facility" class ="adamSmithComp373Proj1.Domain.FacilityImpl">
         <property name="FacilityID" ref="FacilityID" />
         <property name="Name" ref="Name" />
         <property name="Location" ref="Location" />
@@ -19,7 +19,7 @@
         <property name="OccupiedRooms" ref="OccupiedRooms" />
     </bean>
     <bean id="FacilityMaintainence" class ="adamSmithComp373Proj1.Domain.FacilityMaintainence" scope="prototype" />
-    <bean id="FacilityUSe" class ="adamSmithComp373Proj1.Domain.FacilityUse" scope="prototype" />
+    <bean id="FacilityUse" class ="adamSmithComp373Proj1.Domain.FacilityUse" scope="prototype" />
     <bean id="Inspection" class ="adamSmithComp373Proj1.Domain.Inspection" scope="prototype" />
 
 </beans>
