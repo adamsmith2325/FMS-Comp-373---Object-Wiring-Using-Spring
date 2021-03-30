@@ -11,8 +11,8 @@ public class InspectionImpl extends Inspection{
     private String Name = Conn.getName();
     private Type InsType = Conn.getType();
     private String Details = Conn.getDetails();
-    private Integer facility = Conn.getFacility();
-    private Integer Room = Conn.getRoom();
+    private Integer facility = Conn.getFacility(InspectionID);
+    private Integer Room = Conn.getRoom(InspectionID);
     
     public Inspection(Integer ID) {
         this.InspectionID = ID;
@@ -41,8 +41,8 @@ public class InspectionImpl extends Inspection{
     public Integer getRoom(){
         return Conn.getRoom(this.Room);
     }
-    public void setRoom(int InspectionID){
-        Conn.setRoom(this.InspectionID);
+    public void setRoom(int InspectionID, Integer Room){
+        Conn.setRoom(this.InspectionID, Room);
     }
 
     public void setFacility(Facility facility) {

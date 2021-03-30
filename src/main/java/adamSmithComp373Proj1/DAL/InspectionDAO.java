@@ -17,11 +17,11 @@ public class InspectionDAO {
         
     }
 
-    public Integer getFacility(){
+    public Integer getFacility(Integer InsID){
         
     }
 
-    public Integer getRoom(){
+    public Integer getRoom(Integer InsID){
         
     }
 
@@ -41,7 +41,7 @@ public class InspectionDAO {
         
     }
 
-    public void setRoom(){
+    public void setRoom(Integer InsID, Integer Rooms){
         
     }
 
