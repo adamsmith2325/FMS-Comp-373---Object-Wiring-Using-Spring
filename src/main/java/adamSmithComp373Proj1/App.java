@@ -49,7 +49,6 @@ public final class App {
         System.out.println(Inspection1.getRoom()); 
 
         */
-        
     
 
        

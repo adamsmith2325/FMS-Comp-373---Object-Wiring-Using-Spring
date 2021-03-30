@@ -14,6 +14,10 @@ public class InspectionImpl implements Inspection{
     private Integer facility = Conn.getFacility(InspectionID);
     private Integer Room = Conn.getRoom(InspectionID);
     
+    public InspectionImpl() {
+        this.InspectionID = null;
+    }
+
     public InspectionImpl(Integer ID) {
         this.InspectionID = ID;
     }
