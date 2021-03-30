@@ -15,7 +15,7 @@ public class DBHelper {
     public static Connection formConnection(){  
         Connection con = null;
         try{
-            con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/facilitymanagementsystem", "root", "root");
+            con = DriverManager.getConnection("jdbc:mysql://sql5.freemysqlhosting.net/sql5402364", "sql5402364", "Dpxi9gtdS5");
         } catch(Exception e){
             System.out.println(e.toString());
         }
