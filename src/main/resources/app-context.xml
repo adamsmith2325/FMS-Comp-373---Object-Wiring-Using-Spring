@@ -12,7 +12,7 @@
 
     <bean id="Facility" class ="adamSmithComp373Proj1.Domain.FacilityImpl" />
     <bean id="FacilityMaintainence" class ="adamSmithComp373Proj1.Domain.FacilityMaintainence" scope="prototype" />
-    <bean id="FacilityUse" class ="adamSmithComp373Proj1.Domain.FacilityUse" scope="prototype" />
+    <bean id="FacilityUse" class ="adamSmithComp373Proj1.Domain.FacilityUseImpl" scope="prototype" />
     <bean id="Inspection" class ="adamSmithComp373Proj1.Domain.InspectionImpl" scope="prototype" />
 
 </beans>

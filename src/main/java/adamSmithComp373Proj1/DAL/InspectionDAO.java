@@ -9,9 +9,7 @@ public class InspectionDAO {
         
     }
 
-    public Type getType(){
-        
-    }
+
 
     public String getDetails(){
         
@@ -25,12 +23,8 @@ public class InspectionDAO {
         
     }
 
-    public void setName(){
+    public void setName(Integer InsID, String name){
 
-    }
-
-    public void setType(Integer InsID, String Type){
-        
     }
 
     public void setDetails(){
@@ -43,6 +37,10 @@ public class InspectionDAO {
 
     public void setRoom(Integer InsID, Integer Rooms){
         
+    }
+
+    public void addInspection(){
+
     }
 
 

@@ -6,15 +6,12 @@ public interface Inspection extends InspectionGetSetInterface{
     
     public void addInspection();
     public String getName();
-    public Type getType();
     public String getDetails();
     public Integer getFacility();
     public Integer getRoom();
-    public void setName();
-    public void setType();
-    public void setDetails();
-    public void setFacility();
-    public void setRoom();
-
+    public void setName(String Name);
+    public void setDetails(String Details);
+    public void setFacility(Integer FacilityID);
+    public void setRoom(Integer NumOfRooms);
 
 }

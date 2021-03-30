@@ -12,12 +12,12 @@ public class FacilityUseImpl extends FacilityUse{
 
    LocalDate today = LocalDate.now();
 
-    private int useID;
+    public Integer useID;
     private static FacilityUseDAO Connection = new FacilityUseDAO();
     private Integer facility  = Connection.getFacility();
     private Date dateStarted = Connection.getDateStarted(this.useID);
     private Date dateEnded  = Connection.getDateEnded();
-    private int roomID  = Connection.getRoomID();
+    private Integer roomID  = Connection.getRoomID();
     
 
     public FacilityUse(Integer ID){

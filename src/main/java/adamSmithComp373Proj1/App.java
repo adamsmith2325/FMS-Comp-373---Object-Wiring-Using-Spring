@@ -22,12 +22,35 @@ public final class App {
        
         ApplicationContext context = new ClassPathXmlApplicationContext("app-context.xml");
         System.out.println("***************** Application Context instantiated! ******************");
+        
+        
+        //Containered Facility Tests
         FacilityImpl Building1 = (FacilityImpl) context.getBean("Facility");
         Building1.FacilityID = 3;
         
         Building1.setPhone("8888888888");
+        System.out.println(Building1.getPhone());
         
-        //FacilityUse yogaClass = (FacilityUse) context.getBean("FacilityUse");
+        /*
+        //Containered FacilityUse Tests
+        FacilityUseImpl Event1 = (FacilityUseImpl) context.getBean("FacilityUse");
+        Event1.useID = 1;
+        
+        Event1.setRoomID(2);
+        System.out.println(Event1.getRoomID());  
+
+        
+        
+        //Containered Inspection Tests
+        InspectionImpl Inspection1 = (InspectionImpl) context.getBean("Inspection");
+        Inspection1.InspectionID = 1;
+
+        Inspection1.setRoom(2);
+        System.out.println(Inspection1.getRoom()); 
+
+        */
+        
+    
 
        
        
