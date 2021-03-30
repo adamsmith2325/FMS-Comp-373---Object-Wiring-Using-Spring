@@ -27,7 +27,7 @@ public final class App {
         //Containered Facility Tests
         FacilityImpl Building1 = (FacilityImpl) context.getBean("Facility");
         Building1.FacilityID = 3;
-        
+        System.out.println(Building1.getPhone());
         Building1.setPhone("8888888888");
         System.out.println(Building1.getPhone());
         
